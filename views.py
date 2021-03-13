@@ -140,6 +140,7 @@ class ComponentPostView(APIView):
 def sortFunc(entry):
     return entry["page"]
 
+#retrieves all components of a project
 class ComponentListView(APIView):
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
